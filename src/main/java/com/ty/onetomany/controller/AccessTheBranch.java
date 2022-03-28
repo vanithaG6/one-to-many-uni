@@ -14,6 +14,8 @@ public class AccessTheBranch {
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("dev");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		 Hospital hospital=entityManager.find(Hospital.class,2);
+		 
+		 //Branch List
 		 List<Branch> branch = hospital.getBreach();
 		 System.out.println(hospital.getName());
 		 System.out.println(hospital.getFounder());
